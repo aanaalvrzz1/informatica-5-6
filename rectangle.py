@@ -10,7 +10,8 @@ def main():
     print("this is your perimeter:", perimeter)
     area = (width*5)
     print("this is your area:",area)
-    diagonal = 
+    diagonal = ((5**2)+(width**2))**0.5
+    print("this is your diagonal:",diagonal)
 
 
 
