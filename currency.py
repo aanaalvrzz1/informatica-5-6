@@ -15,8 +15,8 @@ def main():
 
 
     #results
-    print("this is you total in dll:", dolares)
-    print("this is your total in mxn:",mxn)
+    print("this is you total in dll:", round(dolares,2))
+    print("this is your total in mxn:",round(mxn,2))
 
 if __name__== "__main__":
     main()
