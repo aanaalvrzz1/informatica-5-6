@@ -11,7 +11,7 @@ def main():
     area = (width*5)
     print("this is your area:",area)
     diagonal = ((5**2)+(width**2))**0.5
-    print("this is your diagonal:",diagonal)
+    print("this is your diagonal:",round(diagonal,2))
 
 
 
