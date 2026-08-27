@@ -21,18 +21,21 @@ def main():
     altitude = float(input("enter you exact altitude level: "))
 
 # calculation for the free fall
-    if altitude == 10000:
-        print()
-    elif altitude >= 700:
-        print()
-    elif altitude >= 85:
-        print()
-    elif altitude >= 50:
-        print()
-    elif altitude >= 12:
-        print()
-    elif altitude >= 0:
-        print()
+    #exosphere
+    if altitude <= 10000:
+        print(round((altitude/2) + (230) + (176) + (506) + (600),1))
+    #thermosphere
+    elif altitude <= 700:
+        print(round(altitude/2 + (176) + (506) + (600),1))
+    #mesosphere
+    elif altitude <= 85:
+        print(round(altitude/0.2) + 506 + 600)
+    #stratosphere
+    elif altitude <= 50:
+        print(round((altitude/0.075) + 600 ,1))
+    #troposphere
+    elif altitude <= 12:
+        print(round((altitude/0.02 , 1)))
     else:
         print("invalid number!")
 
