@@ -7,7 +7,14 @@ def main():
         if command == "add":
             new_task = input("Enter a new task: ")
             tasks.append(new_task)
-        elif command == "stop":
+        elif command == "complete":
+            yesno = input("did you completed all tasks? (yes or no)").lower()
+            if yesno == "yes":
+                    print("congrats!")
+                    tasks.clear()
+            elif yesno == "no":
+                    print("keep doing your tasks")
+        elif command == "end":
             break
 
 
