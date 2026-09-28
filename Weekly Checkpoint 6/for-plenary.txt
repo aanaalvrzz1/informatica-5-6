@@ -1,0 +1,18 @@
+    Write a description for a while loop.
+
+a while loop is when we want to repeat something so we start
+with the word "while" and write the condition we want to put
+so each time this condition happens it will repeat and repeat
+until something breaks this loop. We also have "While true" which
+is the same but this applies only if the condition is true
+
+    Write a description for a for loop.
+
+a for loop is a loop that basicly has a variable so we use "for X in range()"
+we can print the numbers on that variable in a line or instead we can use
+"for variable in other_variable" we can also print that like a list.
+
+    Compare a while loop to a for loop.
+
+both of them can be really helpful even if they are not for the same thing,
+they work for repeating something in our codes.

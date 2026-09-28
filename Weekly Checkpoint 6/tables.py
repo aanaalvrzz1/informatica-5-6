@@ -1,16 +1,18 @@
 def main():
-        list[1,2,3,4,5,6,7,8,9,10]
-        num = int(input("Enter a number (1-10) "))
-        while num >=10 and num >0 :
-            print(f"Here is the {num} times table")
-            for num in list:
-                print(f"{list} times {num} = {num*list}")
-
-
-
-
-
-
+    nums = []
+    for i in range(1,11):
+        nums.append(str(i))
+    while True:
+        num =(input("Enter a number (1-10) ")).lower().strip()
+        if num == "exit":
+            break
+        elif num in nums:
+            print(f"Here is the {num} times table.")
+            for x in range(1,11):
+                result = int(num) * x
+                print(f"{x} times {num} is {result}")
+        else:
+            print("Invalid Command")
 
 
 if __name__=="__main__":
