@@ -1,13 +1,11 @@
 def main():
-
-    print('You must enter a NUMBER.')
-    try:
-        number = int(input('Enter a number: '))
-    except ValueError:
-        not_validated = True
+    not_validated = True
     while not_validated:
-        number = int(input('Enter a number: '))
-        not_validated = False
-
+        try:
+            number = int(input("Enter a number: "))
+            print("Number stored successfully.")
+            not_validated = False 
+        except ValueError:
+            print("Enter an integer Number ")
 if __name__=="__main__":
     main()
