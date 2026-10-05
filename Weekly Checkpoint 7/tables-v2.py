@@ -23,24 +23,22 @@ def main():
             print("Enter a whole number!")
 
 
-        print(f"Here is your quizz on the {times_table} times table")
+    print(f"Here is your quizz on the {times_table} times table")
 
-        for x in range(1, (max_value + 1)):
-            not_validated3 = True
-            answer = x * times_table
-            print(f"{x} times {times_table} is: ")
-            while not_validated3:
-                try:
-                    user_answer = int(input("The answer is? "))
-                    if user_answer == answer :
-                        print("correct")
-                    elif user_answer != answer :
-                            print("incorrect")
-                    not_validated3 = False
-                except ValueError:
-                    print("Enter a whole number!")
-
-
+    for x in range(1, (max_value + 1)):
+        not_validated3 = True
+        answer = x * times_table
+        print(f"{x} times {times_table} is: ")
+        while not_validated3:
+            try:
+                user_answer = int(input("The answer is? "))
+                if user_answer == answer :
+                    print("correct")
+                elif user_answer != answer :
+                        print("incorrect")
+                not_validated3 = False
+            except ValueError:
+                print("Enter a whole number!")
 
 if __name__ == "__main__":
     main()
