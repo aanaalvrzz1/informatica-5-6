@@ -21,12 +21,5 @@ def binary_to_decimal():
 
 
 
-
-
-
-
-
-
-
 if __name__=="__main__":
     main()
